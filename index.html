@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contablito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="contablito">
+        <h1>Contablito</h1>
+        
+        <div class="informacion">
+            <div class="input-info">
+                <h4>Descripción:</h4>
+                <input id="descripcion" type="text" placeholder="ingrese nombre">
+            </div>
+            <div class="input-info">
+                <h4>Tio de transacción:</h4>
+                <input type="radio" name="tranza" value="compra" required>Compra
+                <input type="radio" name="tranza" value="venta" required>Venta
+            </div>
+            <div class="input-info">
+                <h4>Tipo IVA:</h4>
+                <input type="radio" name="radios" value="Basico">Básico
+                <input type="radio" name="radios" value="Minimo">Mínimo
+                <input type="radio" name="radios" value="Exento">Exento
+            </div>
+            <div class="input-info">
+                <h4>Subtotal ($):</h4>
+                <input type="number" id="points" name="points" min="0" placeholder="ingrese subtotal" required>
+                <button id="submit">
+                    ingresar
+                </button>
+            </div>
+        </div>
+
+        <h4>Total Ventas:</h4>
+        <div id="ventas"></div>
+        <h4>Total Compras:</h4>
+        <div id="compras"></div>
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Tipo</th>
+                    <th>Subtotal ($)</th>
+                    <th>IVA ($)</th>
+                    <th>Total (IVA inc.)</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-cuerpo">
+
+            </tbody>
+        </table>
+    </main>
+</body>
+<script src="contablito.js"></script>
+</html>

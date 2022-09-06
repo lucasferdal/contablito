@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(25, 25, 25);
+}
+
+table{
+    width: 500px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+th,td{
+    background: rgb(255, 255, 255);
+    color: rgb(28, 28, 28);
+    text-align: center;
+    padding: 2px;
+}
+
+.contablito{
+    width: 700px;
+    background: rgb(230, 230, 230);
+    margin: 50px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.20);
+}
+
+.input-info{
+    display: flex;
+    margin: 10px auto;
+    align-items: center;
+}
+
+.input-info input{
+    margin: auto 10px ;
+}
+
+.informacion{
+    margin: 20px;
+    width: 300px;
+}
